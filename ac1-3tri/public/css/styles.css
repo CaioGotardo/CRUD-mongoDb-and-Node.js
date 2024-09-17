@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: background-color 0.3s, color 0.3s; /* Adicione uma transição suave */
+}
+
+body {
+    color: rgb(255, 255, 255);
+    background-color: #212529; /* Cor padrão (modo escuro) */
+}
+
+body.white-mode {
+    background-color: #ffffff; /* Cor de fundo para o modo claro */
+    color: #000000; /* Cor do texto para o modo claro */
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #343a40; /* Cor da navbar (modo escuro) */
+}
+
+
+body.white-mode .navbar {
+    background-color: #e9ecef; /* Cor da navbar (modo claro) */
+}
+
+main {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #212529; /* Cor de fundo padrão (modo escuro) */
+    min-height: calc(100vh - 56px); /* Ajuste para altura da navbar */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+body.white-mode main {
+    background-color: #f8f9fa; /* Cor de fundo para o modo claro */
+}
+
+aside {
+    margin-left: 65px;
+    max-width: 50%; 
+}
+
+article {
+    max-width: 45%; 
+}
+
+img {
+    position: relative;
+    right: 40px;
+    width: 100%; 
+}
+
+h2 {
+    font-size: 56px;
+    line-height: 10px;
+    color: white; /* Cor do texto no modo escuro */
+}
+
+body.white-mode h2 {
+    color: #000000; /* Cor do texto no modo claro */
+}
+
+span {
+    color: #5AE4A8;
+}
+
+p {
+    color: white; /* Cor do texto no modo escuro */
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+body.white-mode p {
+    color: #000000; /* Cor do texto no modo claro */
+}
+
+.btn-success {
+    background-color: #5AE4A8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+body.white-mode .btn-success {
+    background-color: #5AE4A8; /* Manter a cor do botão consistente no modo claro */
+}
+
+.btn-success:hover {
+    background-color: #48c091;
+    color: white;
+}
+
+body.white-mode .btn-success:hover {
+    background-color: #48c091; /* Manter a cor de hover consistente no modo claro */
+}
+
+table.table-bordered {
+    color: white;
+}
+
+body.white-mode table.table-bordered {
+    color: #000000; /* Cor da tabela no modo claro */
+}

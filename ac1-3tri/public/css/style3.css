@@ -1,0 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    transition: background-color 0.3s, color 0.3s; /* Adicione uma transição suave */
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: #ffffff; /* Cor padrão (modo escuro) */
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #343a40; /* Cor da navbar (modo escuro) */
+}
